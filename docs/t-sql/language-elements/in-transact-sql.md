@@ -71,7 +71,7 @@ test_expression [ NOT ] IN
 >  Toute valeur null retournée par *sous-requête* ou *expression* qui sont comparés aux *test_expression* en utilisant IN ou NOT IN retourne UNKNOWN. L'utilisation de valeurs Null avec IN ou NOT IN peut produire des résultats inattendus.  
   
 ## <a name="remarks"></a>Notes  
- Explicitement, y compris un très grand nombre de valeurs (plusieurs milliers de valeurs séparées par des virgules) entre parenthèses, dans une clause IN peut consommer des ressources et retourner des erreurs 8623 ou 8632. Pour contourner ce problème, stockez les éléments dans la liste IN dans une table et utilisez une sous-requête SELECT dans une clause IN.  
+ Explicitement, inclure un très grand nombre de valeurs (plusieurs milliers de valeurs séparées par des virgules) entre les parenthèses d'une clause IN peut consommer des ressources et retourner des erreurs 8623 ou 8632. Pour contourner ce problème, stockez les éléments de la liste IN dans une table et utilisez une sous-requête SELECT dans la clause IN.  
   
  Erreur 8623 :  
   
